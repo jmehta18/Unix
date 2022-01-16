@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+	<title>Shipping Address</title>
+	<link rel = "stylesheet" href ="style.css">
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class = "header">
+	<div class = "container">
+		<div class = "navbar">
+		<div class = "logo">
+			<img src="mainlogo.jpg" width="70px">
+		</div>
+			<nav>
+                <b> <p style="text-align:left; font-family: helvetica; padding: 20px; padding-top: 30px;">UNIX</p> </b>
+				<ul id = "MenuItems">
+					<li> <a href ="./home.php">Home</a></li>
+					<li> <a href ="./products.php">Products</a></li>
+					<li> <a href ="./cart.php">Cart</a></li>
+					<li> <a href ="./account.php">Login</a></li>
+				</ul>	
+		</div>
+    </div>
+    </div>
+    <hr>
+
+
+	<div class="main-header">
+	<header>
+        <h1>Unix Checkout</h1><br>
+        <h4>Please enter a shipping address.</h4>
+    </header> 
+	</div>
+
+<div class="my-form">
+
+    <form method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" maxlength="15" required><br><br>
+
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" maxlength="15"required><br><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" maxlength="15"required><br><br>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" maxlength="15"required><br><br>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" maxlength="2"required><br><br>
+
+      <label for="zip">Zip Code:</label>
+      <input type="text" id="zip" name="zip" maxlength="5"required><br><br>
+
+      <br>
+	  <div class = "buttons">
+        <a  href = "./cart.php" class = "btn"><center>Go To Cart</center></a>
+
+
+		<a href = "payment.html" class = "btn"><center>Continue</center></a>
+	  </div>
+    </form>
+</div>
+
+ <!-- footer -->
+
+ <div class = "footer">
+    <div class ="container">
+        <div class = "row">
+            <div class = "footer-col-1">
+                <h3>Download Our App</h3>
+                <img src="mainlogo.jpg">
+                <p>Download Our App for Android and IOS</p>
+            </div>
+            <div class = "footer-col-2">
+                <p>Embrace your inner child!</p>
+            </div>
+            <div class = "footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Posts</li>
+                    <li>Return Policy</li>
+                    <li> Join Affiliate</li>
+                </ul>
+            </div>
+            <div class = "footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li> Youtube</li>
+                </ul>
+            </div>
+        </div>	
+        <hr>
+        <p class = "copyright">Copyright 2021 - Disney</p>
+    </div>	
+</div>
+
+
+<!-- js of toggle menu -->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle(){
+			if (MenuItems.style.maxHeight =="0px")
+			{
+				MenuItems.style.maxHeight ="200px"
+			}
+			else
+			{
+				MenuItems.style.maxHeight =="0px"
+			}
+		}
+	 </script>	
+</body>
+</html>
